@@ -142,7 +142,7 @@ class Initialize {
 			$this->find_classes( $php_files, $folder, $namespace );
 
 			if ( !WP_DEBUG ) {
-				\wp_die( \esc_html__( 'Plugin Name is on production environment with missing `composer dumpautoload -o` that will improve the performance on autoloading itself.', PN_TEXTDOMAIN ) );
+				\wp_die( \esc_html__( 'Plugin Name is on production environment with missing `composer dump-autoload -o` that will improve the performance on autoloading itself.', PN_TEXTDOMAIN ) );
 			}
 
 			return $this->classes;
